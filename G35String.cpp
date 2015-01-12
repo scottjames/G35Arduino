@@ -16,13 +16,16 @@
 #define MHZ_16 (1)  // standard Arduino/Teensy
 
 #if MHZ_16
-#define DELAYLONG 17    // should be ~ 20uS long
-#define DELAYSHORT 7   // should be ~ 10uS long
+//SAJ ORIG: #define DELAYLONG 17    // should be ~ 20uS long
+//SAJ ORIG: #define DELAYSHORT 7   // should be ~ 10uS long
+#define DELAYLONG 20    // should be ~ 20uS long
+#define DELAYSHORT 9   // should be ~ 10uS long
 #else  // 20MHz
 #define DELAYLONG 25    // should be ~ 20uS long
 #define DELAYSHORT 11   // should be ~ 10uS long
 #endif
-#define DELAYEND 40     // should be ~ 30uS long
+//SAJ ORIG: #define DELAYEND 40     // should be ~ 30uS long
+#define DELAYEND 45     // should be ~ 30uS long
 
 #define ZERO(x) digitalWrite(x, LOW);           \
   delayMicroseconds(DELAYSHORT);                \
